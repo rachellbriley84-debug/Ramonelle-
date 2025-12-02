@@ -1,65 +1,84 @@
-<!DOCTYPE html>
+                                                                                                                                                                                                                                                            <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Ramonelle Cook House</title>
-<img src="IMG-20251202-WA0003.jpg" alt="Food Image" style="width:100%;">
-                <style>
-                        body {
-                                    margin: 0;
-                                                font-family: Arial, sans-serif;
-                                                            background-color: #fff8f0;
-                                                                    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenyan Recipe Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+        }
 
-                                                                            /* TOP NAVIGATION */
-                                                                                    header {
-                                                                                                background-color: #ff7f50;
-                                                                                                            padding: 15px 20px;
-                                                                                                                        display: flex;
-                                                                                                                                    align-items: center;
-                                                                                                                                                justify-content: space-between;
-                                                                                                                                                            color: white;
-                                                                                                                                                                    }
+        header {
+            background: #ff914d;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
 
-                                                                                                                                                                            .logo-area {
-                                                                                                                                                                                        display: flex;
-                                                                                                                                                                                                    align-items: center;
-                                                                                                                                                                                                                gap: 10px;
-                                                                                                                                                                                                                        }
+        .container {
+            padding: 20px;
+        }
 
-                                                                                                                                                                                                                                .logo-area img {
-                                                                                                                                                                                                                                            width: 45px;
-                                                                                                                                                                                                                                                        height: 45px;
-                                                                                                                                                                                                                                                                    border-radius: 50%;
-                                                                                                                                                                                                                                                                                object-fit: cover;
-                                                                                                                                                                                                                                                                                            border: 2px solid white;
-                                                                                                                                                                                                                                                                                                    }
+        h2 {
+            margin-top: 30px;
+            color: #333;
+        }
 
-                                                                                                                                                                                                                                                                                                            /* SEARCH BAR */
-                                                                                                                                                                                                                                                                                                                    .search-bar input {
-                                                                                                                                                                                                                                                                                                                                padding: 7px 10px;
-                                                                                                                                                                                                                                                                                                                                            border-radius: 5px;
-                                                                                                                                                                                                                                                                                                                                                        border: none;
-                                                                                                                                                                                                                                                                                                                                                                    width: 180px;
-                                                                                                                                                                                                                                                                                                                                                                                font-size: 14px;
-                                                                                                                                                                                                                                                                                                                                                                                        }
+        .category-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
 
-                                                                                                                                                                                                                                                                                                                                                                                                /* HERO SECTION */
-                                                                                                                                                                                                                                                                                                                                                                                                        .hero {
-                                                                                                                                                                                                                                                                                                                                                                                                                    text-align: center;
-                                                                                                                                                                                                                                                                                                                                                                                                                                padding: 40px 20px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+        .category {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #444;
+        }
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                .hero h1 {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            font-size: 28px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        color: #ff7f50;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    margin-bottom: 10px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
+        .category a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .hero p {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                font-size: 16px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            color: #444;
+        .category:hover {
+            background: #ffe1cc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Kenyan Recipe Hub
+    </header>
+
+    <div class="container">
+        <h2>Categories</h2>
+
+        <div class="category-list">
+            <div class="category"><a href="breakfast/README.md">Breakfast</a></div>
+            <div class="category"><a href="lunch/README.md">Lunch</a></div>
+            <div class="category"><a href="dinner/README.md">Dinner</a></div>
+            <div class="category"><a href="drinks/README.md">Drinks</a></div>
+            <div class="category"><a href="desserts/README.md">Desserts</a></div>
+            <div class="category"><a href="snacks/README.md">Snacks</a></div>
+        </div>
+    </div>
+</body>
+</html>                                                                                                                                                                                                                                                                color: #444;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     }
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             /* RECIPE CARDS */
