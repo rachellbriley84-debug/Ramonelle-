@@ -3,79 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenyan Recipe Hub</title>
+    <title>Ramonelle Cook House</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
             background: #fafafa;
-        }
-
-        header {
-            background: #ff914d;
-            padding: 20px;
             text-align: center;
-            color: white;
-            font-size: 28px;
-            font-weight: bold;
         }
 
-        .container {
-            padding: 20px;
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
-        h2 {
-            margin-top: 30px;
+        h1 {
+            margin-top: 20px;
+            font-size: 26px;
             color: #333;
         }
 
-        .category-list {
+        .categories {
+            margin-top: 20px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: 1fr 1fr;
             gap: 15px;
-            margin-top: 15px;
+            padding: 20px;
         }
 
-        .category {
+        .cat {
             background: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            text-align: center;
+            padding: 18px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             font-size: 18px;
-            font-weight: bold;
-            color: #444;
-        }
-
-        .category a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .category:hover {
-            background: #ffe1cc;
-            cursor: pointer;
         }
     </style>
 </head>
-
 <body>
-    <header>
-        Kenyan Recipe Hub
-    </header>
 
-    <div class="container">
-        <h2>Categories</h2>
+<header>
+    <img src="logo.jpg" alt="Ramonelle Cook House Banner">
+</header>
 
-        <div class="category-list">
-            <div class="category"><a href="breakfast/README.md">Breakfast</a></div>
-            <div class="category"><a href="lunch/README.md">Lunch</a></div>
-            <div class="category"><a href="dinner/README.md">Dinner</a></div>
-            <div class="category"><a href="drinks/README.md">Drinks</a></div>
-            <div class="category"><a href="desserts/README.md">Desserts</a></div>
-            <div class="category"><a href="snacks/README.md">Snacks</a></div>
-        </div>
-    </div>
+<h1>Choose a Category</h1>
+
+<div class="categories">
+    <div class="cat">Breakfast</div>
+    <div class="cat">Lunch</div>
+    <div class="cat">Dinner</div>
+    <div class="cat">Drinks</div>
+    <div class="cat">Desserts</div>
+    <div class="cat">Snacks</div>
+</div>
+
 </body>
 </html>
