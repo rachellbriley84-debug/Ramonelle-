@@ -1,65 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramonelle Cook House</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramonelle Cooking House</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #fafafa;
+            background: #ffffff;
+        }
+
+        header {
+            background: #ff6f3c;
+            color: white;
+            padding: 20px;
             text-align: center;
         }
 
-        header img {
-            width: 100%;
-            height: auto;
-            display: block;
+        nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
         }
 
-        h1 {
-            margin-top: 20px;
-            font-size: 26px;
-            color: #333;
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
         }
 
-        .categories {
-            margin-top: 20px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
+        nav a:hover {
+            background: #ff6f3c;
+        }
+
+        .hero {
+            background-image: url("food.jpg"); /* Your image filename */
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .content {
             padding: 20px;
-        }
-
-        .cat {
-            background: white;
-            padding: 18px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            font-size: 18px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-<nav style="
-    background: white;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    font-size: 18px;
-    font-weight: 600;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-">
-    <a href="index.html" style="text-decoration:none; color:black;">Home</a>
-    <a href="categories.html" style="text-decoration:none; color:black;">Categories</a>
-    <a href="about.html" style="text-decoration:none; color:black;">About</a>
-    <a href="contact.html" style="text-decoration:none; color:black;">Contact</a>
-</nav>
+    <header>
+        <h1>Ramonelle Cooking House</h1>
+        <p>Delicious Recipes Made Simple</p>
+    </header>
 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
+    <div class="hero">
+        Ramonelle Cooking House
+    </div>
+
+    <div class="content">
+        <h2>Welcome to Our Kitchen!</h2>
+        <p>Explore amazing food recipes, step-by-step tutorials, and tasty ideas for your daily meals.</p>
+    </div>
 
 </body>
 </html>
