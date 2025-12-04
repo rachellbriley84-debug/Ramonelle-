@@ -1,93 +1,117 @@
-/* ---------- RESET ---------- */
+/* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-/* ---------- GENERAL PAGE STYLE ---------- */
+/* BODY */
 body {
-  background: #fafafa;
-  color: #333;
-  line-height: 1.6;
-  padding-bottom: 40px;
+    background: #f9f9f9;
+    color: #333;
 }
 
-/* ---------- NAVBAR ---------- */
-nav {
-  width: 100%;
-  background: #d35400; /* orange theme */
-  padding: 15px 0;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+/* HEADER */
+header {
+    height: 45vh;
+    background: url("PUT-YOUR-BACKGROUND-IMAGE-URL-HERE") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 20px;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.3s;
+header .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
 }
 
-nav a:hover {
-  color: #ffe6cc;
+header .title {
+    font-size: 3rem;
+    color: white;
+    z-index: 2;
+    letter-spacing: 2px;
+    animation: fadeIn 1.2s ease;
 }
 
-/* ---------- HEADER SECTION ---------- */
-.header {
-  text-align: center;
-  padding: 50px 20px;
-  background: #f8d7b6; 
+header .subtitle {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    z-index: 2;
+    margin-top: 5px;
+    animation: fadeUp 1.5s ease;
 }
 
-.header h1 {
-  font-size: 40px;
-  color: #c0392b;
-  margin-bottom: 10px;
+/* RECIPES SECTION */
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px 0;
 }
 
-.header p {
-  font-size: 20px;
-  color: #555;
+.recipe-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0 15px 40px;
 }
 
-/* ---------- CONTENT BOX ---------- */
-.container {
-  width: 90%;
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.recipe-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform .3s, box-shadow .3s;
 }
 
-/* ---------- BUTTON ---------- */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #d35400;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 15px;
-  transition: 0.3s;
+.recipe-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
-.btn:hover {
-  background: #e67e22;
+.recipe-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
 }
 
-/* ---------- FOOTER ---------- */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #d35400;
-  color: white;
-  margin-top: 40px;
+.recipe-card h3 {
+    font-size: 1.2rem;
+    margin: 12px 15px 5px;
+}
+
+.recipe-card p {
+    font-size: .9rem;
+    margin: 0 15px 15px;
+    color: #666;
+}
+
+.recipe-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #ff7f50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.recipe-card button:hover {
+    background: #ff5a2c;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
