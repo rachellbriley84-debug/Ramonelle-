@@ -3,98 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramonelle</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #fafafa;
-            color: #333;
-        }
-
-        header {
-            background: #ff8c42;
-            padding: 20px;
-            text-align: center;
-            color: white;
-            font-size: 32px;
-            font-weight: bold;
-        }
-
-        .hero {
-            padding: 30px;
-            text-align: center;
-            background: white;
-            margin: 20px;
-            border-radius: 10px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-
-        .recipes {
-            margin: 20px;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-        }
-
-        .recipes h2 {
-            margin-bottom: 10px;
-        }
-
-        .recipe-item {
-            background: #ffe1cc;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-            background: #333;
-            color: white;
-        }
-    </style>
+    <title>Ramonelle – Clean & Delicious Recipes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- HEADER SECTION -->
     <header>
-        Ramonelle
+        <div class="overlay"></div>
+        <h1 class="title">Ramonelle</h1>
+        <p class="subtitle">Clean, simple, delicious homemade recipes</p>
     </header>
 
-    <section class="hero">
-        <h1>Welcome to Ramonelle</h1>
-        <p>Your home for easy, delicious, and creative recipes.</p>
-    </section>
-
+    <!-- MAIN CONTENT -->
     <section class="recipes">
-        <h2>Featured Recipes</h2>
+        <h2 class="section-title">Our Recipes</h2>
 
-        <div class="recipe-item">
-            <strong>🍛 Spicy Pilau</strong>
-            <p>A classic Kenyan dish rich in flavor, perfect for family meals.</p>
-        </div>
+        <div class="recipe-grid">
 
-        <div class="recipe-item">
-            <strong>🥘 Chicken Stew</strong>
-            <p>Soft, juicy chicken simmered in a thick, tasty sauce.</p>
-        </div>
+            <div class="recipe-card">
+                <img src="PUT-YOUR-IMAGE-LINK-HERE" alt="Recipe Image">
+                <h3>Recipe Title</h3>
+                <p>A short description of your recipe goes here.</p>
+                <button>View Recipe</button>
+            </div>
 
-        <div class="recipe-item">
-            <strong>🥞 Banana Pancakes</strong>
-            <p>Sweet, fluffy, and perfect for breakfast.</p>
+            <div class="recipe-card">
+                <img src="PUT-YOUR-IMAGE-LINK-HERE" alt="Recipe Image">
+                <h3>Recipe Title</h3>
+                <p>A short description of your recipe goes here.</p>
+                <button>View Recipe</button>
+            </div>
+
+            <div class="recipe-card">
+                <img src="PUT-YOUR-IMAGE-LINK-HERE" alt="Recipe Image">
+                <h3>Recipe Title</h3>
+                <p>A short description of your recipe goes here.</p>
+                <button>View Recipe</button>
+            </div>
+
         </div>
     </section>
-
-    <footer>
-        &copy; 2025 Ramonelle | All Rights Reserved
-    </footer>
 
 </body>
 </html>
