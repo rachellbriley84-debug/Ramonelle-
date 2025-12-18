@@ -1,117 +1,53 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+/* Load fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;500&display=swap');
+
+.hero {
+  height: 80vh;
+  background-image: url("https://images.unsplash.com/photo-1546069901-eacef0df6022");
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-/* BODY */
-body {
-    background: #f9f9f9;
-    color: #333;
+.hero-overlay {
+  background: rgba(92, 64, 51, 0.6); /* warm brown overlay */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* HEADER */
-header {
-    height: 45vh;
-    background: url("IMG-20251202-WA0003.jpg") center/cover no-repeat;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.hero-overlay h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #f4d03f; /* soft gold accent */
 }
 
-header .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+.hero-overlay h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #fff;
 }
 
-header .title {
-    font-size: 3rem;
-    color: white;
-    z-index: 2;
-    letter-spacing: 2px;
-    animation: fadeIn 1.2s ease;
+.hero-btn {
+  background: #f4d03f;
+  color: #5c4033; /* warm brown text */
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
-header .subtitle {
-    font-size: 1.1rem;
-    color: #f1f1f1;
-    z-index: 2;
-    margin-top: 5px;
-    animation: fadeUp 1.5s ease;
-}
-
-/* RECIPES SECTION */
-.section-title {
-    font-size: 2rem;
-    text-align: center;
-    margin: 30px 0;
-}
-
-.recipe-grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 0 15px 40px;
-}
-
-.recipe-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform .3s, box-shadow .3s;
-}
-
-.recipe-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-}
-
-.recipe-card img {
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-}
-
-.recipe-card h3 {
-    font-size: 1.2rem;
-    margin: 12px 15px 5px;
-}
-
-.recipe-card p {
-    font-size: .9rem;
-    margin: 0 15px 15px;
-    color: #666;
-}
-
-.recipe-card button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    background: #ff7f50;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background .3s;
-}
-
-.recipe-card button:hover {
-    background: #ff5a2c;
-}
-
-/* ANIMATIONS */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+.hero-btn:hover {
+  transform: scale(1.05);
+  background: #e0b938;
 }
